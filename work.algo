@@ -1,0 +1,45 @@
+// algo nb characters
+
+ALGORITHM nb_length_sentence
+VAR 
+    str: STRING := "the best in the world."; 
+    count: INTEGER := 0;
+BEGIN
+// count each character expect space
+    FOR (init i=0; i < str.length(); i++) DO
+        IF (str [i] !="") THEN
+            count ++;
+        END_IF
+    END_FOR
+        write(count)
+END
+// algo nb mots
+
+ALGORITHM nb_mot
+VAR 
+    str: STRING := "the best in the world."; 
+    count: INTEGER := 1;
+    BEGIN
+// count each mot
+    FOR (init i=0; i < str.length(); i++) DO
+        IF (str [i] =" ") THEN
+            count ++;
+        END_IF
+    END_FOR
+        write(count)
+    END
+// algo nb voyelle
+
+ALGORITHM nb_voyelle
+VAR 
+    str: STRING := "the best in the world."; 
+    count: INTEGER := 0;
+    BEGIN
+// count each voyelle
+    FOR (init i=0; i < str.length(); i++) DO
+        IF (CHAR [i] ="a")||(CHAR [i] ="e")||(CHAR [i] ="u")||(CHAR [i] ="o")||(CHAR [i] ="i")||(CHAR [i] ="y") THEN
+            count ++;
+        END_IF
+    END_FOR
+        write(count)
+    END
